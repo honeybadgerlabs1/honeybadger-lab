@@ -294,14 +294,17 @@ footer {
 }
 
 .architecture-image {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 30pxauto;
+    padding: 15px;
+    text-align: center;
 }
 
 .architecture-image img {
     width: 100%;
+    max-width: 900px;
     height: auto;
     display: block;
+    margin: 0 auto;
     border-radius: 12px;
 }
