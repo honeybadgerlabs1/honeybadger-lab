@@ -272,3 +272,36 @@ footer {
         align-items: flex-start;
     }
 }
+
+/* ================================
+   LAB ARCHITECTURE
+================================ */
+
+.architecture {
+    padding: 80px 20px;
+}
+
+.architecture h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.architecture p {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.architecture-image {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.architecture-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
