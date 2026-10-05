@@ -1,237 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HoneyBadger Lab | IT & Cybersecurity Home Lab</title>
+    <meta
+        name="description"
+        content="HoneyBadger Lab - Enterprise IT, cybersecurity, networking, Active Directory, SIEM, and help desk homelab portfolio."
+    >
+
+    <title>HoneyBadger Lab | IT & Cybersecurity Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">HONEYBADGER<span>LAB</span></div>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#infrastructure">Infrastructure</a></li>
-            <li><a href="https://github.com/honeybadgerlabs1/honeybadger-lab">GitHub</a></li>
-        </ul>
-    </nav>
-</header>
+    <header class="site-header">
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                HONEYBADGER<span>LAB</span>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#infrastructure">Infrastructure</a>
+                <a href="#projects">Projects</a>
+                <a href="#screenshots">Lab</a>
+
+                <a
+                    href="https://github.com/honeybadgerlabs1/honeybadger-lab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+            </nav>
+
+        </div>
+    </header>
 
 
-<main>
+    <!-- =========================
+         HERO
+    ========================== -->
 
-<section id="home" class="hero">
+    <main>
 
-    <div class="hero-content">
+        <section id="home" class="hero">
 
-        <p class="terminal-text">
-            root@honeybadgerlab:~$ ./initialize_lab.sh
-        </p>
+            <div class="hero-content">
 
-        <h1>HoneyBadger Lab</h1>
+                <p class="eyebrow">HANDS-ON ENTERPRISE HOMELAB</p>
 
-        <h2>Enterprise IT • Cybersecurity • Infrastructure</h2>
+                <h1>
+                    HoneyBadger
+                    <span>Lab</span>
+                </h1>
 
-        <p class="hero-description">
-            A hands-on enterprise home lab built to develop practical
-            experience in system administration, networking, cybersecurity,
-            help desk operations, SIEM monitoring, Active Directory,
-            virtualization, and infrastructure management.
-        </p>
+                <h2>
+                    IT Infrastructure • Cybersecurity • Systems Administration
+                </h2>
 
-        <section id="architecture" class="architecture">
-    <div class="container">
-        <h2>Lab Architecture</h2>
+                <p class="hero-description">
+                    A multi-system enterprise-style virtual environment built
+                    to develop practical experience in desktop support,
+                    Windows Server administration, Active Directory,
+                    networking, cybersecurity monitoring, Linux,
+                    IT service management, and troubleshooting.
+                </p>
 
-        <p>
-            HoneyBadger Lab is an enterprise-style virtual IT and cybersecurity
-            environment designed for hands-on experience with systems administration,
-            networking, security monitoring, help desk operations, and endpoint support.
-        </p>
+                <div class="hero-buttons">
 
-        <div class="architecture-image">
-            <img
-                src="images/HoneyBadger%20Lab%20Network%20Architecture.png"
-                alt="HoneyBadger Lab Network Architecture Diagram"
+                    <a href="#projects" class="btn primary-btn">
+                        Explore Projects
+                    </a>
+
+                    <a
+                        href="https://github.com/honeybadgerlabs1/honeybadger-lab"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn secondary-btn"
+                    >
+                        View GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OVERVIEW
+        ========================== -->
+
+        <section class="overview section">
+
+            <div class="section-heading">
+
+                <p class="section-label">ABOUT THE LAB</p>
+
+                <h2>Enterprise IT Experience Built at Home</h2>
+
+                <p>
+                    HoneyBadger Lab recreates common enterprise technologies
+                    and support workflows in a controlled virtual environment.
+                    The lab is used to practice deployment, administration,
+                    troubleshooting, monitoring, security, and documentation.
+                </p>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <strong>9+</strong>
+                    <span>Virtual Systems</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong>AD DS</strong>
+                    <span>Identity Management</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong>Wazuh</strong>
+                    <span>Security Monitoring</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong>GLPI</strong>
+                    <span>IT Service Management</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INFRASTRUCTURE
+        ========================== -->
+
+        <section id="infrastructure" class="section dark-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">INFRASTRUCTURE</p>
+
+                <h2>HoneyBadger Lab Architecture</h2>
+
+                <p>
+                    The environment combines Windows Server, Windows clients,
+                    Linux, network security, SIEM, ITSM, file services,
+                    endpoint administration, and security testing into one
+                    integrated lab.
+                </p>
+
+            </div>
+
+
+            <div class="architecture-container">
+
+                <img
+                    src="images/HoneyBadger%20Lab%20Network%20Architecture.png"
+                    alt="HoneyBadger Lab network architecture"
+                >
+
+            </div>
+
+
+            <div class="technology-grid">
+
+                <div class="technology-card">
+                    <h3>Identity</h3>
+                    <p>
+                        Active Directory Domain Services, DNS,
+                        organizational units, users, groups,
+                        authentication, and Group Policy.
+                    </p>
+                </div>
+
+                <div class="technology-card">
+                    <h3>Networking</h3>
+                    <p>
+                        OPNsense firewall, LAN routing, firewall policies,
+                        network segmentation, DNS, DHCP, and remote access.
+                    </p>
+                </div>
+
+                <div class="technology-card">
+                    <h3>Security</h3>
+                    <p>
+                        Wazuh SIEM, endpoint agents, log collection,
+                        vulnerability monitoring, Kali Linux,
+                        and security testing.
+                    </p>
+                </div>
+
+                <div class="technology-card">
+                    <h3>IT Operations</h3>
+                    <p>
+                        GLPI ticketing, asset management, Windows endpoints,
+                        file services, user support, and troubleshooting.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LIVE VM ENVIRONMENT
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">VIRTUALIZATION</p>
+
+                <h2>Live VMware Environment</h2>
+
+                <p>
+                    The infrastructure is deployed in VMware Workstation as
+                    multiple interconnected virtual machines rather than
+                    simulated only through documentation.
+                </p>
+
+            </div>
+
+
+            <div class="featured-image">
+
+                <img
+                    src="images/honeybadger-vmware-lab.png"
+                    alt="HoneyBadger Lab VMware Workstation environment"
+                >
+
+                <div class="image-info">
+
+                    <h3>Multi-System Enterprise Lab</h3>
+
+                    <p>
+                        VMware Workstation hosts Windows Server, Windows 11,
+                        Ubuntu/Linux, Kali Linux, OPNsense, Wazuh, file
+                        services, and the GLPI help desk environment.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section id="projects" class="section dark-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">PROJECTS</p>
+
+                <h2>Hands-On Lab Projects</h2>
+
+                <p>
+                    Each project focuses on practical skills used in
+                    desktop support, systems administration,
+                    networking, and cybersecurity roles.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <a
+                    href="projects/01-active-directory/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">01</span>
+
+                    <h3>Active Directory</h3>
+
+                    <p>
+                        Windows Server domain deployment, organizational
+                        units, users, groups, authentication, DNS,
+                        and domain administration.
+                    </p>
+
+                    <div class="tags">
+                        <span>Windows Server</span>
+                        <span>AD DS</span>
+                        <span>DNS</span>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="projects/02-group-policy/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">02</span>
+
+                    <h3>Group Policy</h3>
+
+                    <p>
+                        Centralized Windows configuration and security
+                        policies using Active Directory Group Policy.
+                    </p>
+
+                    <div class="tags">
+                        <span>GPO</span>
+                        <span>Windows</span>
+                        <span>Administration</span>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="projects/03-file-server/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">03</span>
+
+                    <h3>Enterprise File Server</h3>
+
+                    <p>
+                        Department shares, NTFS permissions,
+                        mapped network drives, access control,
+                        and centralized file storage.
+                    </p>
+
+                    <div class="tags">
+                        <span>SMB</span>
+                        <span>NTFS</span>
+                        <span>Storage</span>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="projects/04-opnsense-firewall/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">04</span>
+
+                    <h3>OPNsense Firewall</h3>
+
+                    <p>
+                        Virtual firewall deployment, routing,
+                        network security policies, NAT,
+                        and traffic management.
+                    </p>
+
+                    <div class="tags">
+                        <span>Firewall</span>
+                        <span>Routing</span>
+                        <span>Network Security</span>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="projects/05-wazuh-siem/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">05</span>
+
+                    <h3>Wazuh SIEM</h3>
+
+                    <p>
+                        Centralized security monitoring, endpoint agents,
+                        event collection, threat detection,
+                        and security analysis.
+                    </p>
+
+                    <div class="tags">
+                        <span>SIEM</span>
+                        <span>EDR</span>
+                        <span>Monitoring</span>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="projects/06-glpi-helpdesk/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">06</span>
+
+                    <h3>GLPI Help Desk</h3>
+
+                    <p>
+                        IT service management environment integrating
+                        ticketing, users, technicians, incidents,
+                        assets, and Active Directory.
+                    </p>
+
+                    <div class="tags">
+                        <span>ITSM</span>
+                        <span>Help Desk</span>
+                        <span>LDAP</span>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="projects/07-linux-server/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">07</span>
+
+                    <h3>Linux Server</h3>
+
+                    <p>
+                        Linux server deployment, SSH administration,
+                        networking, services, permissions,
+                        and command-line management.
+                    </p>
+
+                    <div class="tags">
+                        <span>Linux</span>
+                        <span>SSH</span>
+                        <span>CLI</span>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="projects/08-kali-security/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">08</span>
+
+                    <h3>Kali Security</h3>
+
+                    <p>
+                        Security testing environment for network discovery,
+                        scanning, vulnerability assessment,
+                        and defensive security practice.
+                    </p>
+
+                    <div class="tags">
+                        <span>Kali</span>
+                        <span>Nmap</span>
+                        <span>Security</span>
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="projects/09-remote-access/README.md"
+                    class="project-card"
+                >
+
+                    <span class="project-number">09</span>
+
+                    <h3>Remote Access</h3>
+
+                    <p>
+                        Secure remote administration of the lab
+                        using RDP, VPN-style connectivity,
+                        and remote management tools.
+                    </p>
+
+                    <div class="tags">
+                        <span>RDP</span>
+                        <span>Tailscale</span>
+                        <span>Remote Support</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACTIVE DIRECTORY
+        ========================== -->
+
+        <section id="screenshots" class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">IDENTITY MANAGEMENT</p>
+
+                <h2>Active Directory Environment</h2>
+
+                <p>
+                    HoneyBadger Lab uses a Windows Server domain to simulate
+                    centralized enterprise identity and endpoint management.
+                </p>
+
+            </div>
+
+
+            <div class="showcase">
+
+                <div class="showcase-image">
+
+                    <img
+                        src="images/IT_OUs_Users.png"
+                        alt="HoneyBadger Lab Active Directory users and organizational units"
+                    >
+
+                </div>
+
+
+                <div class="showcase-content">
+
+                    <span class="feature-label">
+                        ACTIVE DIRECTORY
+                    </span>
+
+                    <h3>Users & Organizational Units</h3>
+
+                    <p>
+                        The domain is organized into departmental
+                        organizational units to simulate an enterprise
+                        directory structure.
+                    </p>
+
+                    <ul>
+                        <li>Department-based organizational units</li>
+                        <li>Domain user accounts</li>
+                        <li>Security groups</li>
+                        <li>Centralized authentication</li>
+                        <li>Group Policy administration</li>
+                        <li>Windows domain clients</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GLPI
+        ========================== -->
+
+        <section class="section dark-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">IT SERVICE MANAGEMENT</p>
+
+                <h2>GLPI Help Desk</h2>
+
+                <p>
+                    The lab includes a working IT service management platform
+                    for practicing real help-desk workflows from ticket
+                    submission through technical resolution.
+                </p>
+
+            </div>
+
+
+            <div class="showcase reverse">
+
+                <div class="showcase-content">
+
+                    <span class="feature-label">
+                        INCIDENT MANAGEMENT
+                    </span>
+
+                    <h3>Ticket Management Workflow</h3>
+
+                    <p>
+                        GLPI provides a realistic service desk environment
+                        where users can report incidents and technicians
+                        can categorize, prioritize, assign, document,
+                        and resolve support requests.
+                    </p>
+
+                    <ul>
+                        <li>Incident creation</li>
+                        <li>Ticket categorization</li>
+                        <li>Urgency and impact</li>
+                        <li>Technician assignment</li>
+                        <li>Active Directory users</li>
+                        <li>Resolution documentation</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="showcase-image">
+
+                    <img
+                        src="images/Ticket%20creation.png"
+                        alt="HoneyBadger Lab GLPI help desk ticket creation interface"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">TECHNOLOGIES</p>
+
+                <h2>Skills Demonstrated</h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div>
+                    <h3>Systems</h3>
+                    <p>
+                        Windows Server 2022<br>
+                        Windows 11<br>
+                        Ubuntu Linux<br>
+                        Kali Linux
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Infrastructure</h3>
+                    <p>
+                        Active Directory<br>
+                        DNS & DHCP<br>
+                        Group Policy<br>
+                        File Services
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Security</h3>
+                    <p>
+                        Wazuh SIEM<br>
+                        OPNsense<br>
+                        Endpoint Monitoring<br>
+                        Security Testing
+                    </p>
+                </div>
+
+                <div>
+                    <h3>IT Support</h3>
+                    <p>
+                        GLPI ITSM<br>
+                        Incident Management<br>
+                        Troubleshooting<br>
+                        Remote Support
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <strong>HONEYBADGER<span>LAB</span></strong>
+
+                <p>
+                    Enterprise IT & Cybersecurity Homelab
+                </p>
+            </div>
+
+            <a
+                href="https://github.com/honeybadgerlabs1/honeybadger-lab"
+                target="_blank"
+                rel="noopener noreferrer"
             >
-        </div>
-    </div>
-</section>
-
-<div class="lab-environment">
-    <h3>Live Virtual Lab Environment</h3>
-
-    <p>
-        HoneyBadger Lab is deployed as a multi-system virtual environment
-        using VMware Workstation. The lab includes Windows Server,
-        Active Directory, Windows endpoints, Linux servers, OPNsense,
-        Wazuh SIEM, Kali Linux, file services, and GLPI help desk services.
-    </p>
-
-    <img
-        src="images/honeybadger-vmware-lab.png"
-        alt="HoneyBadger Lab VMware virtual environment"
-        class="lab-screenshot"
-    >
-
-    <p class="image-caption">
-        VMware Workstation environment hosting the HoneyBadger Lab
-        infrastructure and security systems.
-    </p>
-</div>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="primary-button">
-                Explore Projects
-            </a>
-
-            <a href="https://github.com/honeybadgerlabs1/honeybadger-lab"
-               class="secondary-button">
-                View GitHub
+                GitHub Repository
             </a>
 
         </div>
 
-    </div>
-
-</section>
-
-
-<section id="infrastructure" class="section">
-
-    <p class="section-label">LAB ENVIRONMENT</p>
-
-    <h2>Enterprise Infrastructure</h2>
-
-    <p class="section-description">
-        The HoneyBadger Lab simulates a small enterprise network with
-        centralized identity management, endpoint security, monitoring,
-        firewall protection, ticket management, and remote administration.
-    </p>
-
-    <div class="tech-grid">
-
-        <div class="tech-card">
-            <h3>Active Directory</h3>
-            <p>Windows Server domain services, users, groups, OUs and authentication.</p>
-        </div>
-
-        <div class="tech-card">
-            <h3>Group Policy</h3>
-            <p>Centralized Windows configuration, security policies and user management.</p>
-        </div>
-
-        <div class="tech-card">
-            <h3>OPNsense</h3>
-            <p>Firewall, routing, network segmentation and security controls.</p>
-        </div>
-
-        <div class="tech-card">
-            <h3>Wazuh SIEM</h3>
-            <p>Endpoint monitoring, security analytics, log collection and alerting.</p>
-        </div>
-
-        <div class="tech-card">
-            <h3>GLPI Help Desk</h3>
-            <p>ITSM ticketing integrated with Active Directory through LDAP.</p>
-        </div>
-
-        <div class="tech-card">
-            <h3>Linux</h3>
-            <p>Linux server administration, SSH, services and security configuration.</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="projects" class="section projects-section">
-
-    <p class="section-label">HANDS-ON EXPERIENCE</p>
-
-    <h2>Lab Projects</h2>
-
-    <div class="project-grid">
-
-        <a href="projects/01-active-directory/" class="project-card">
-            <span>01</span>
-            <h3>Active Directory</h3>
-            <p>Domain deployment, organizational units, users and security groups.</p>
-        </a>
-
-        <a href="projects/02-group-policy/" class="project-card">
-            <span>02</span>
-            <h3>Group Policy</h3>
-            <p>Enterprise policy configuration and centralized workstation management.</p>
-        </a>
-
-        <a href="projects/03-file-server/" class="project-card">
-            <span>03</span>
-            <h3>File Server</h3>
-            <p>Department shares, NTFS permissions and mapped network drives.</p>
-        </a>
-
-        <a href="projects/04-opnsense-firewall/" class="project-card">
-            <span>04</span>
-            <h3>OPNsense Firewall</h3>
-            <p>Network routing, firewall rules and infrastructure security.</p>
-        </a>
-
-        <a href="projects/05-wazuh-siem/" class="project-card">
-            <span>05</span>
-            <h3>Wazuh SIEM</h3>
-            <p>Endpoint agents, event monitoring and centralized security visibility.</p>
-        </a>
-
-        <a href="projects/06-glpi-helpdesk/" class="project-card">
-            <span>06</span>
-            <h3>GLPI Help Desk</h3>
-            <p>LDAP integration, ticket workflows and enterprise IT support.</p>
-        </a>
-
-        <a href="projects/07-linux-server/" class="project-card">
-            <span>07</span>
-            <h3>Linux Server</h3>
-            <p>Linux administration, networking and server services.</p>
-        </a>
-
-        <a href="projects/08-kali-security/" class="project-card">
-            <span>08</span>
-            <h3>Kali Security</h3>
-            <p>Security testing and defensive cybersecurity exercises.</p>
-        </a>
-
-        <a href="projects/09-remote-access/" class="project-card">
-            <span>09</span>
-            <h3>Remote Access</h3>
-            <p>Secure remote administration using RDP and private network access.</p>
-        </a>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<footer>
-
-    <p>HoneyBadger Lab</p>
-
-    <p>
-        Enterprise IT • Networking • Cybersecurity • Systems Administration
-    </p>
-
-</footer>
+    </footer>
 
 </body>
 </html>
