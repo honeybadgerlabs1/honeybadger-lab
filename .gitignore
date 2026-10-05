@@ -1,0 +1,28 @@
+# Credentials and secrets
+.env
+*.key
+*.pem
+*.pfx
+*.p12
+*password*
+*secret*
+*token*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# VM disks / large virtualization artifacts
+*.vmdk
+*.vdi
+*.qcow2
+*.iso
+*.ova
+*.ovf
