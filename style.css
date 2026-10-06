@@ -552,6 +552,71 @@ nav a:hover {
 
 
 /* =========================================
+   EVIDENCE GRID
+========================================= */
+
+.evidence-grid {
+    width: min(100%, var(--max-width));
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+.evidence-card {
+    background: var(--panel);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.evidence-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(32, 230, 138, 0.45);
+
+    background: var(--panel-light);
+}
+
+.evidence-card img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.evidence-content {
+    padding: 24px;
+}
+
+.evidence-content h3 {
+    margin-bottom: 10px;
+
+    color: var(--accent);
+
+    font-size: 1.2rem;
+}
+
+.evidence-content p {
+    color: var(--muted);
+
+    font-size: 0.92rem;
+}
+
+
+/* =========================================
    SKILLS
 ========================================= */
 
@@ -641,7 +706,8 @@ footer {
             repeat(2, 1fr);
     }
 
-    .projects-grid {
+    .projects-grid,
+    .evidence-grid {
         grid-template-columns:
             repeat(2, 1fr);
     }
@@ -696,7 +762,8 @@ footer {
     .technology-grid,
     .stats-grid,
     .skills-grid,
-    .projects-grid {
+    .projects-grid,
+    .evidence-grid {
         grid-template-columns: 1fr;
     }
 

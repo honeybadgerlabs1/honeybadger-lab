@@ -183,6 +183,7 @@
 
                 <div class="technology-card">
                     <h3>Identity</h3>
+
                     <p>
                         Active Directory Domain Services, DNS,
                         organizational units, users, groups,
@@ -192,6 +193,7 @@
 
                 <div class="technology-card">
                     <h3>Networking</h3>
+
                     <p>
                         OPNsense firewall, LAN routing, firewall policies,
                         network segmentation, DNS, DHCP, and remote access.
@@ -200,6 +202,7 @@
 
                 <div class="technology-card">
                     <h3>Security</h3>
+
                     <p>
                         Wazuh SIEM, endpoint agents, log collection,
                         vulnerability monitoring, Kali Linux,
@@ -209,6 +212,7 @@
 
                 <div class="technology-card">
                     <h3>IT Operations</h3>
+
                     <p>
                         GLPI ticketing, asset management, Windows endpoints,
                         file services, user support, and troubleshooting.
@@ -287,7 +291,6 @@
 
 
             <div class="projects-grid">
-
 
                 <a
                     href="projects/01-active-directory/README.md"
@@ -571,10 +574,621 @@
 
 
         <!-- =========================
-             GLPI
+             WINDOWS SERVER / DOMAIN SERVICES
         ========================== -->
 
         <section class="section dark-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">WINDOWS SERVER</p>
+
+                <h2>Domain Services Infrastructure</h2>
+
+                <p>
+                    Windows Server provides the centralized identity,
+                    authentication, DNS, and management services used
+                    throughout the HoneyBadger Lab environment.
+                </p>
+
+            </div>
+
+            <div class="showcase reverse">
+
+                <div class="showcase-content">
+
+                    <span class="feature-label">DOMAIN CONTROLLER</span>
+
+                    <h3>Active Directory Domain Services</h3>
+
+                    <p>
+                        The HoneyBadger domain controller provides the core
+                        enterprise directory services required for centralized
+                        user, computer, and policy management.
+                    </p>
+
+                    <ul>
+                        <li>Windows Server 2022 administration</li>
+                        <li>Active Directory Domain Services</li>
+                        <li>DNS services</li>
+                        <li>Domain authentication</li>
+                        <li>Centralized user management</li>
+                        <li>Server role administration</li>
+                    </ul>
+
+                </div>
+
+                <div class="showcase-image">
+
+                    <img
+                        src="images/AD_Server_Manager.png"
+                        alt="HoneyBadger Lab Windows Server Manager and Active Directory services"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GROUP POLICY
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">CENTRALIZED MANAGEMENT</p>
+
+                <h2>Group Policy Administration</h2>
+
+                <p>
+                    Group Policy is used to centrally configure Windows
+                    endpoints and automatically deploy resources to users
+                    based on their Active Directory organization.
+                </p>
+
+            </div>
+
+            <div class="showcase">
+
+                <div class="showcase-image">
+
+                    <img
+                        src="images/group-policy-management.png"
+                        alt="HoneyBadger Lab Group Policy Management console"
+                    >
+
+                </div>
+
+                <div class="showcase-content">
+
+                    <span class="feature-label">GROUP POLICY</span>
+
+                    <h3>Enterprise Policy Management</h3>
+
+                    <p>
+                        Policies are managed through the domain and linked
+                        to organizational units to simulate centralized
+                        endpoint administration in a business environment.
+                    </p>
+
+                    <ul>
+                        <li>Group Policy Management Console</li>
+                        <li>Department-based policy deployment</li>
+                        <li>Organizational unit targeting</li>
+                        <li>Centralized Windows configuration</li>
+                        <li>Network drive deployment</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FILE SERVER
+        ========================== -->
+
+        <section class="section dark-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">FILE SERVICES</p>
+
+                <h2>Enterprise File Server</h2>
+
+                <p>
+                    The lab uses a dedicated Windows file server to provide
+                    department-based network storage with SMB shares,
+                    Active Directory security groups, and NTFS permissions.
+                </p>
+
+            </div>
+
+            <div class="showcase reverse">
+
+                <div class="showcase-content">
+
+                    <span class="feature-label">SMB FILE SHARING</span>
+
+                    <h3>Department Network Shares</h3>
+
+                    <p>
+                        Separate network shares provide centralized storage
+                        for departments across the HoneyBadger Lab domain.
+                    </p>
+
+                    <ul>
+                        <li>Accounting share</li>
+                        <li>Engineering share</li>
+                        <li>HR share</li>
+                        <li>IT share</li>
+                        <li>Manufacturing share</li>
+                        <li>Sales share</li>
+                        <li>Centralized company resources</li>
+                    </ul>
+
+                </div>
+
+                <div class="showcase-image">
+
+                    <img
+                        src="images/file-server-department-shares.png"
+                        alt="HoneyBadger Lab Windows file server department shares"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NTFS PERMISSIONS
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">ACCESS CONTROL</p>
+
+                <h2>NTFS Permissions & Security Groups</h2>
+
+                <p>
+                    File access is controlled using Windows NTFS permissions
+                    and Active Directory security groups, providing
+                    department-specific access to network resources.
+                </p>
+
+            </div>
+
+            <div class="showcase">
+
+                <div class="showcase-image">
+
+                    <img
+                        src="images/it-share-ntfs-permissions.png"
+                        alt="HoneyBadger Lab IT share NTFS permissions"
+                    >
+
+                </div>
+
+                <div class="showcase-content">
+
+                    <span class="feature-label">AUTHORIZATION</span>
+
+                    <h3>Role-Based File Access</h3>
+
+                    <p>
+                        Department security groups are assigned appropriate
+                        NTFS permissions so access can be managed through
+                        Active Directory rather than individual accounts.
+                    </p>
+
+                    <ul>
+                        <li>Security-group-based permissions</li>
+                        <li>NTFS access control</li>
+                        <li>Modify and read permissions</li>
+                        <li>Administrator full control</li>
+                        <li>Department resource isolation</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAPPED DRIVE
+        ========================== -->
+
+        <section class="section dark-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">ENDPOINT MANAGEMENT</p>
+
+                <h2>Automated Network Drive Mapping</h2>
+
+                <p>
+                    Department network drives are automatically deployed
+                    to domain users through Group Policy, demonstrating
+                    centralized resource provisioning.
+                </p>
+
+            </div>
+
+            <div class="showcase reverse">
+
+                <div class="showcase-content">
+
+                    <span class="feature-label">GPO DRIVE MAPPING</span>
+
+                    <h3>IT Department Mapped Drive</h3>
+
+                    <p>
+                        The IT network share is automatically mapped for
+                        authorized users, connecting endpoint configuration
+                        with Active Directory and file-server permissions.
+                    </p>
+
+                    <ul>
+                        <li>Group Policy Preferences</li>
+                        <li>Automatic drive mapping</li>
+                        <li>Department-specific resources</li>
+                        <li>Centralized configuration</li>
+                        <li>SMB network access</li>
+                    </ul>
+
+                </div>
+
+                <div class="showcase-image">
+
+                    <img
+                        src="images/gpo-it-mapped-drive.png"
+                        alt="HoneyBadger Lab IT department mapped network drive"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DOMAIN CLIENT
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">WINDOWS ENDPOINT</p>
+
+                <h2>Domain-Joined Client Validation</h2>
+
+                <p>
+                    Windows 11 endpoints are joined to the HoneyBadger domain
+                    and used to validate authentication, DNS, networking,
+                    Group Policy, and access to enterprise resources.
+                </p>
+
+            </div>
+
+            <div class="evidence-grid">
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/user-log-in.png"
+                        alt="HoneyBadger Lab domain user login"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Domain User Login</h3>
+                        <p>
+                            Successful domain authentication demonstrates
+                            communication between the Windows endpoint and
+                            Active Directory domain controller.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/ipconfig.png"
+                        alt="HoneyBadger Lab Windows endpoint IP configuration"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Network Configuration</h3>
+                        <p>
+                            Endpoint IP configuration is validated to
+                            troubleshoot connectivity, DNS, gateway,
+                            and domain communication.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WAZUH
+        ========================== -->
+
+        <section class="section dark-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">SECURITY OPERATIONS</p>
+
+                <h2>Wazuh SIEM & Endpoint Monitoring</h2>
+
+                <p>
+                    HoneyBadger Lab includes a working Wazuh security
+                    monitoring platform that collects endpoint telemetry,
+                    Windows security events, authentication activity,
+                    and system information from monitored hosts.
+                </p>
+
+            </div>
+
+            <div class="showcase reverse">
+
+                <div class="showcase-content">
+
+                    <span class="feature-label">SIEM DASHBOARD</span>
+
+                    <h3>Centralized Security Monitoring</h3>
+
+                    <p>
+                        Wazuh provides centralized visibility into monitored
+                        systems and allows security events to be investigated
+                        from a dedicated SIEM dashboard.
+                    </p>
+
+                    <ul>
+                        <li>Centralized event collection</li>
+                        <li>Windows endpoint monitoring</li>
+                        <li>Security event analysis</li>
+                        <li>Endpoint agent management</li>
+                        <li>Authentication monitoring</li>
+                        <li>Threat hunting</li>
+                    </ul>
+
+                </div>
+
+                <div class="showcase-image">
+
+                    <img
+                        src="images/Wazuh-dashboard.png"
+                        alt="HoneyBadger Lab Wazuh security monitoring dashboard"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WAZUH EVENT EVIDENCE
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="section-label">THREAT DETECTION</p>
+
+                <h2>Windows Security Event Collection</h2>
+
+                <p>
+                    Endpoint activity is forwarded to Wazuh and analyzed
+                    centrally, providing hands-on experience with SIEM
+                    telemetry, event investigation, and detection workflows.
+                </p>
+
+            </div>
+
+            <div class="evidence-grid">
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/logon-events.png"
+                        alt="Windows authentication events displayed in Wazuh"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Authentication Events</h3>
+                        <p>
+                            Windows authentication activity is collected
+                            and displayed for security investigation.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/agent-Niers0j0ung.png"
+                        alt="HoneyBadger Lab Wazuh Windows endpoint agent"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Endpoint Agent Monitoring</h3>
+                        <p>
+                            Windows systems are enrolled as Wazuh agents,
+                            allowing endpoint telemetry to be centrally
+                            collected and analyzed.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/powershell-failed-login.png"
+                        alt="Controlled failed login security event in HoneyBadger Lab"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Controlled Authentication Testing</h3>
+                        <p>
+                            Controlled lab activity is generated to validate
+                            security logging and demonstrate the complete
+                            detection pipeline.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/wazuh-services-running.png"
+                        alt="HoneyBadger Lab Wazuh services running"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>SIEM Service Health</h3>
+                        <p>
+                            Wazuh services are validated from the Linux
+                            server to confirm the monitoring infrastructure
+                            is operational.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WAZUH INFRASTRUCTURE
+        ========================== -->
+
+        <section class="section dark-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">SIEM INFRASTRUCTURE</p>
+
+                <h2>Wazuh Platform Administration</h2>
+
+                <p>
+                    The SIEM environment is administered directly from
+                    the Linux server, including service validation,
+                    agent connectivity, manager status, and secure
+                    dashboard access.
+                </p>
+
+            </div>
+
+            <div class="evidence-grid">
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/wazuh-services.png"
+                        alt="HoneyBadger Lab Wazuh service administration"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Service Administration</h3>
+                        <p>
+                            Linux command-line administration is used
+                            to verify and troubleshoot Wazuh components.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/wazuh-enabled.png"
+                        alt="HoneyBadger Lab Wazuh service enabled"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Service Configuration</h3>
+                        <p>
+                            Core monitoring services are configured
+                            and validated for reliable operation.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/Wazuh_Login.png"
+                        alt="HoneyBadger Lab Wazuh dashboard login"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Secure Dashboard Access</h3>
+                        <p>
+                            Administrative access to the Wazuh dashboard
+                            provides a dedicated interface for monitoring
+                            and investigating security activity.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="evidence-card">
+
+                    <img
+                        src="images/image.png"
+                        alt="HoneyBadger Lab Wazuh monitoring evidence"
+                    >
+
+                    <div class="evidence-content">
+                        <h3>Operational Validation</h3>
+                        <p>
+                            Additional system validation confirms the
+                            SIEM environment is functioning as part of
+                            the broader HoneyBadger Lab infrastructure.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GLPI
+        ========================== -->
+
+        <section class="section">
 
             <div class="section-heading">
 
@@ -638,7 +1252,7 @@
              SKILLS
         ========================== -->
 
-        <section class="section">
+        <section class="section dark-section">
 
             <div class="section-heading">
 
@@ -653,6 +1267,7 @@
 
                 <div>
                     <h3>Systems</h3>
+
                     <p>
                         Windows Server 2022<br>
                         Windows 11<br>
@@ -663,6 +1278,7 @@
 
                 <div>
                     <h3>Infrastructure</h3>
+
                     <p>
                         Active Directory<br>
                         DNS & DHCP<br>
@@ -673,6 +1289,7 @@
 
                 <div>
                     <h3>Security</h3>
+
                     <p>
                         Wazuh SIEM<br>
                         OPNsense<br>
@@ -683,6 +1300,7 @@
 
                 <div>
                     <h3>IT Support</h3>
+
                     <p>
                         GLPI ITSM<br>
                         Incident Management<br>
